@@ -1,0 +1,35 @@
+# Sorting Algorithms in JAVA
+<!-- These are just some excerpts from my college notes, please add any important details that might be necessary -->
+
+<details>
+  <summary>Definition</summary>
+
+> - Stability - when two elements have equal values, their relative order is preserved after sorting.
+> - In Place Sorting - When it only requires a constant amount of extra memory space to perform the sorting.
+
+</details>
+
+## [Bubble Sort](https://github.com/ThunderE75/DSA/blob/9dcd265ea101ef2bc53df5d07df01059e36e0e9b/Sorting/bubble.java)
+- Stable 
+- In Place Sorting 
+- Comparison Sort
+- Time Complexity - $O(n^2)$
+- Space Complexity - $O(1)$
+- Not Efficient for Large Datasets
+
+
+## [Selection Sort](https://github.com/ThunderE75/DSA/blob/9dcd265ea101ef2bc53df5d07df01059e36e0e9b/Sorting/selection.java)
+
+- 
+
+## [Insertion Sort]()
+
+---
+
+## [Merge Sort]()
+- Recursive Algorithm
+- Divide & Conquer Algorithm
+- Stable
+- Out of place Sorting
+
+## Quick Sort 
