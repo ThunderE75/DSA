@@ -2,7 +2,7 @@ package Sorting;
 
 import java.util.Scanner;
 
-public class HeapSort {
+public class heap {
     void print(int array[], int size) {
         int index = 0;
         while (index < size) {
@@ -95,7 +95,7 @@ public class HeapSort {
     }
 
     public static void main(String args[]) {
-        HeapSort hs = new HeapSort();
+        heap hs = new heap();
         hs.inputArray();
         printArray("Original Array", arr);
         hs.sort(arr);
