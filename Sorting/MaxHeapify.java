@@ -1,3 +1,7 @@
+package Sorting;
+
+// This program is not written by me
+
 import java.util.Arrays;
 
 public class MaxHeapify {
@@ -32,7 +36,7 @@ public class MaxHeapify {
     }
 
     public static void swap(int[] arr, int i, int j) {
-        System.out.println("> Swaping "+arr[i]+" [" +i+"] with "+ arr[j]+"\t[" +j+"]");
+        System.out.println("> Swaping " + arr[i] + " [" + i + "] with " + arr[j] + "\t[" + j + "]");
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;

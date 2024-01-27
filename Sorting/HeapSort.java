@@ -24,53 +24,12 @@ public class HeapSort {
         System.out.print("]\n");
     }
 
-    static void printArray(int a[], int i1, int i2) {
-        String ANSI_RESET = "\u001B[0m";
-        String ANSI_BLACK = "\u001B[30m";
-        String ANSI_RED = "\u001B[31m";
-        String ANSI_GREEN = "\u001B[32m";
-        String ANSI_YELLOW = "\u001B[33m";
-        String ANSI_BLUE = "\u001B[34m";
-        String ANSI_PURPLE = "\u001B[35m";
-        String ANSI_CYAN = "\u001B[36m";
-        String ANSI_WHITE = "\u001B[37m";
-        System.out.print("[ ");
-        for (int i = 0; i < a.length; i++) {
-            if (i == i1) {
-                System.out.print(ANSI_BLUE + a[i] + ANSI_RESET + " ");
-            } else if (i == i2) {
-                System.out.print(ANSI_RED + a[i] + ANSI_RESET + " ");
-            } else if (a[i] != i1 && a[i] != i2)
-                System.out.print(a[i] + " ");
-        }
-        System.out.print("]\n");
-    }
-    static void printArray(int a[], int i1, int i2, int i3) {
-        String ANSI_RESET = "\u001B[0m";
-        String ANSI_BLACK = "\u001B[30m";
-        String ANSI_RED = "\u001B[31m";
-        String ANSI_GREEN = "\u001B[32m";
-        String ANSI_YELLOW = "\u001B[33m";
-        String ANSI_BLUE = "\u001B[34m";
-        String ANSI_PURPLE = "\u001B[35m";
-        String ANSI_CYAN = "\u001B[36m";
-        String ANSI_WHITE = "\u001B[37m";
-        System.out.print("[ ");
-        for (int i = 0; i < a.length; i++) {
-            if (i == i3) {
-                System.out.print(ANSI_BLUE + a[i] + ANSI_RESET + " ");
-            } else if (i == i1) {
-                System.out.print(ANSI_BLUE + a[i] + ANSI_RESET + " ");
-            } else if (i == i2) {
-                System.out.print(ANSI_RED + a[i] + ANSI_RESET + " ");
-            } else if (i!= i1 && i != i2&&i!=i3)
-                System.out.print(a[i] + " ");
-        }
-        System.out.print("]\n");
-    }
-
     static void printArray(String msg, int a[]) {
-        System.out.print("> " + msg + ": [ ");
+        if (msg != "") {
+            System.out.print("> " + msg + ": [ ");
+        } else
+            System.out.print("[ ");
+
         for (int i = 0; i < a.length; i++)
             System.out.print(a[i] + " ");
         System.out.print("]\n");
@@ -99,11 +58,11 @@ public class HeapSort {
 
     static void swap(int[] arr, int a, int b) {
         int temp;
-        System.out.print("> Swapped: " + arr[a] + " with " + arr[b] + "\t");
+        System.out.print("> Swapped: " + arr[b] + " with " + arr[a] + "\t");
         temp = arr[b];
         arr[b] = arr[a];
         arr[a] = temp;
-        printArray(arr, a, b);
+        printArray("", arr);
     }
 
     void sort(int array[]) {
